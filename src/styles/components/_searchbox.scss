@@ -1,0 +1,62 @@
+@use "../global/" as *;
+.searchbox {
+  padding: 1.6rem 3.2rem 1.3rem 3.2rem;
+  background-color: $color-blue-light-3;
+  width: 100%;
+  border-radius: 4.5px;
+
+  &__input {
+    background-color: $color-blue-light-3;
+    width: 100%;
+    border: none;
+    outline: none;
+  }
+}
+
+.search-secondary {
+  margin-top: 3.4rem;
+  margin-bottom: 3.2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.search {
+  width: 100%;
+  margin-top: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  &__form {
+    &--group {
+      width: 100%;
+      border: 1px solid $color-blue-light-1;
+      display: flex;
+      padding: 1.5rem 3.2rem;
+      gap: 3.2rem;
+      border-radius: 4.5px;
+      background-color: $color-blue-light-4;
+      & input {
+        border: none;
+        outline: none;
+        width: 100%;
+        background-color: transparent;
+        &::placeholder {
+          background-color: transparent;
+        }
+        &:focus {
+          background-color: transparent;
+        }
+      }
+      &:hover,
+      &:active {
+        border: 1px solid $color-blue-2;
+        background-color: $color-white;
+      }
+    }
+    &--date {
+      display: flex;
+      width: 100%;
+    }
+  }
+}

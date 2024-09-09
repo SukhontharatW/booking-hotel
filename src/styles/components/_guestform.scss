@@ -1,0 +1,30 @@
+@use "../global/" as *;
+.guest {
+  width: 100%;
+  &__form {
+    & .text__l--500 {
+      margin-bottom: 0.9rem;
+      margin-top: 3.2rem;
+    }
+  }
+
+  &__input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.2rem;
+    border-radius: 4.5px;
+
+    & input,
+    & textarea {
+      padding: 1.5rem 2rem 1rem 2rem;
+      border: 1px solid $color-blue-light-1;
+    }
+  }
+  &__row {
+    width: 100%;
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 1.2rem;
+  }
+}

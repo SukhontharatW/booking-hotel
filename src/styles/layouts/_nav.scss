@@ -1,0 +1,104 @@
+@use "../global/" as *;
+
+.nav {
+  background-color: $color-blue-2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  padding: 4.3rem 4.3rem 0rem 4.6rem;
+  gap: 7.2rem;
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7.2rem;
+    height: 100%;
+  }
+
+  &__item {
+    list-style: none;
+    // height: 100%;
+
+    width: 6.8rem;
+    height: 6.8rem;
+    flex-shrink: 0;
+    padding: 1.4rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border-radius: 100rem;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+      // background-color: $color-white;
+      filter: drop-shadow(9px 9px 16px rgba(0, 0, 0, 0.22));
+      background-color: $color-blue-light-1;
+      .nav__link {
+        color: $color-blue-2;
+        svg {
+          path {
+            stroke: $color-blue-2;
+          }
+        }
+      }
+    }
+  }
+  &__link {
+    color: $color-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    svg {
+      path {
+        stroke: $color-white;
+      }
+    }
+  }
+}
+.nav__active {
+  list-style: none;
+
+  width: 6.8rem;
+  height: 6.8rem;
+  flex-shrink: 0;
+  padding: 1.4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  border-radius: 100rem;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  filter: drop-shadow(9px 9px 16px rgba(0, 0, 0, 0.22));
+  background-color: $color-white;
+  .nav__link {
+    color: $color-blue-2;
+    svg {
+      path {
+        stroke: $color-blue-2;
+      }
+    }
+  }
+}

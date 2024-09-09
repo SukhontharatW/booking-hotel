@@ -1,0 +1,206 @@
+$color-blue-1: #003aa8;
+$color-blue-2: #2d3ddf;
+$color-blue-3: #2c3cde;
+
+$color-blue-light-1: #b7bcf3;
+$color-blue-light-2: #bec3ff;
+$color-blue-light-3: #ebedff;
+$color-blue-light-4: #f2f3ff;
+
+$color-white: #ffffff;
+$color-black: #000000;
+$color-black-light-1: #221f3c;
+$color-black-light-2: #727c8e;
+
+$color-grey-1: #696969;
+$color-grey-2: #707070;
+$color-grey-3: #8e8e8e;
+$color-grey-4: #a8a8a8;
+$color-grey-5: #d1d1d1;
+$color-grey-6: #efeeee;
+
+$color-red: #ff6969;
+$color-yellow: #ffc362;
+
+$color-gradient-blue: (rgba(#2d3ddf, 0), rgba(#171f70, 1));
+$color-gradient-white: (rgba(#ffffff, 0.404), rgba(#ffffff, 0.302));
+$color-white-fade: rgba(#ffffff, 0.35);
+$color-black-fade: rgba(0, 0, 0, 0.55);
+
+.bg__black {
+  background-color: black;
+}
+
+// Block: color
+.color {
+  // Background colors
+  &__bg--blue-1 {
+    background-color: $color-blue-1;
+  }
+  &__bg--blue-2 {
+    background-color: $color-blue-2;
+  }
+  &__bg--blue-3 {
+    background-color: $color-blue-3;
+  }
+
+  &__bg--blue-light-1 {
+    background-color: $color-blue-light-1;
+  }
+  &__bg--blue-light-2 {
+    background-color: $color-blue-light-2;
+  }
+  &__bg--blue-light-3 {
+    background-color: $color-blue-light-3;
+  }
+  &__bg--blue-light-4 {
+    background-color: $color-blue-light-4;
+  }
+
+  &__bg--white {
+    background-color: $color-white;
+  }
+  &__bg--black {
+    background-color: $color-black;
+  }
+  &__bg--black-light-1 {
+    background-color: $color-black-light-1;
+  }
+  &__bg--black-light-2 {
+    background-color: $color-black-light-2;
+  }
+
+  &__bg--grey-1 {
+    background-color: $color-grey-1;
+  }
+  &__bg--grey-2 {
+    background-color: $color-grey-2;
+  }
+  &__bg--grey-3 {
+    background-color: $color-grey-3;
+  }
+  &__bg--grey-4 {
+    background-color: $color-grey-4;
+  }
+  &__bg--grey-5 {
+    background-color: $color-grey-5;
+  }
+  &__bg--grey-6 {
+    background-color: $color-grey-6;
+  }
+
+  // Text colors
+  &__text--black-fade {
+    color: $color-black-fade;
+  }
+  &__text--blue-1 {
+    color: $color-blue-1;
+  }
+  &__text--blue-2 {
+    color: $color-blue-2;
+  }
+  &__text--blue-3 {
+    color: $color-blue-3;
+  }
+
+  &__text--blue-light-1 {
+    color: $color-blue-light-1;
+  }
+  &__text--blue-light-2 {
+    color: $color-blue-light-2;
+  }
+  &__text--blue-light-3 {
+    color: $color-blue-light-3;
+  }
+  &__text--blue-light-4 {
+    color: $color-blue-light-4;
+  }
+
+  &__text--white {
+    color: $color-white;
+  }
+  &__text--black {
+    color: $color-black;
+  }
+  &__text--black-light-1 {
+    color: $color-black-light-1;
+  }
+  &__text--black-light-2 {
+    color: $color-black-light-2;
+  }
+
+  &__text--grey-1 {
+    color: $color-grey-1;
+  }
+  &__text--grey-2 {
+    color: $color-grey-2;
+  }
+  &__text--grey-3 {
+    color: $color-grey-3;
+  }
+  &__text--grey-4 {
+    color: $color-grey-4;
+  }
+  &__text--grey-5 {
+    color: $color-grey-5;
+  }
+  &__text--grey-6 {
+    color: $color-grey-6;
+  }
+
+  // Border colors
+  &__border--blue-1 {
+    border-color: $color-blue-1;
+  }
+  &__border--blue-2 {
+    border-color: $color-blue-2;
+  }
+  &__border--blue-3 {
+    border-color: $color-blue-3;
+  }
+
+  &__border--blue-light-1 {
+    border-color: $color-blue-light-1;
+  }
+  &__border--blue-light-2 {
+    border-color: $color-blue-light-2;
+  }
+  &__border--blue-light-3 {
+    border-color: $color-blue-light-3;
+  }
+  &__border--blue-light-4 {
+    border-color: $color-blue-light-4;
+  }
+
+  &__border--white {
+    border-color: $color-white;
+  }
+  &__border--black {
+    border-color: $color-black;
+  }
+  &__border--black-light-1 {
+    border-color: $color-black-light-1;
+  }
+  &__border--black-light-2 {
+    border-color: $color-black-light-2;
+  }
+
+  &__border--grey-1 {
+    border-color: $color-grey-1;
+  }
+  &__border--grey-2 {
+    border-color: $color-grey-2;
+  }
+  &__border--grey-3 {
+    border-color: $color-grey-3;
+  }
+  &__border--grey-4 {
+    border-color: $color-grey-4;
+  }
+  &__border--grey-5 {
+    border-color: $color-grey-5;
+  }
+  &__border--grey-6 {
+    border-color: $color-grey-6;
+  }
+}
