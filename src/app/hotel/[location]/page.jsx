@@ -20,11 +20,17 @@ async function PostLocation({ params, searchParams }) {
       <div className="container__main">
         <div className="hotel">
           <SearchBox />
-          <p className="hotel__intro text__l--500">
-            Best places to enjoy your stay in {location} from
-            {checkIn} to
-            {checkOut} for {numberOfGuests} guest
-          </p>
+          {post.hotels.length === 0 ? (
+            <p className="hotel__intro text__l--500">
+              No hotels available at this moments.
+            </p>
+          ) : (
+            <p className="hotel__intro text__l--500">
+              Best places to enjoy your stay in {location} from
+              {checkIn} to
+              {checkOut} for {numberOfGuests} guest
+            </p>
+          )}
 
           <div className="hotel__group">
             {post.hotels.map((hotel) => (
